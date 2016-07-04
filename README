@@ -2,15 +2,18 @@
 
 Установка
 
-1. нужен компилятор g++\gcc, пакет php5-dev
+1. Устанавливаем компилятор g++/gcc, пакет php5-dev:
+aptitude install gcc php5-dev
 
-2. запускаем make
+2. Запускаем make
 
-3. редактируем mod_alarm.ini
+3. Редактируем mod_alarm.ini
 
-4. копируем mod_alarm.ini в /etc/php5/conf.d/ 
+4. Копируем mod_alarm.ini в /etc/php5/conf.d/ 
 
-5. ребутим apache
+5. Перезагружаем apache/php-fpm:
+service apache2 restart
+service php5-fpm restart
 
 Пример
 
